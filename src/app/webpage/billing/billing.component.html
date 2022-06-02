@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Billing</title>
+	</head>
+	<body bgcolor="blue">
+	<style>
+		.font{
+			font-size:25px;
+		}
+		.font2{
+			font-size:15px;
+		}
+	</style>
+	<div align="center" class="font">
+		<h1>Billing details</h1>
+		<table class="font">
+		<tr><td>Name:</td></tr>
+		<tr><td><input type="text" size="23" id="bname" name="bname" placeholder="Enter the person name to collect items" class="font2" ></td></tr>
+		<tr><td>Door number/house number:</td></tr>
+		<tr><td><input type="text" size="10" id="bhnum" name="bhnum" placeholder="Enter the door number/house number" class="font2"></td></tr>
+		<tr><td>House/apartment name:</td></tr>
+		<tr><td><input type="text" size="30" id="bhname" name="bhname" placeholder="Enter the house/apartment name" class="font2"></td></tr>
+		<tr><td>Street :</td></tr>
+		<tr><td><input type="text" size="50" id="bstreet" name="bstreet" placeholder="Enter street name" class="font2"></td></tr>	
+		<tr><td>Area:</td></tr>
+		<tr><td><input type="text" size="50" id="barea" name="barea" placeholder="Enter area name" class="font2"></td></tr>
+		<tr><td>City:</td></tr>
+		<tr><td><input type="text" size="40" id="bcity" name="bcity" placeholder="Enter city name" class="font2"></td><td>
+		<tr><td>Pincode:</td></tr>
+		<tr><td><input type="text" size="8" id="bpin" name="bpin" placeholder="Enter Pincode" class="font2"></td></tr>
+		</table>
+		<br><br>
+		collection type:&nbsp; 
+			<input type="radio" name="collection type" id="delivery" >delivery
+			
+			<input type="radio" name="collection type" id="takeaway">takeaway
+			<br><br>
+		<button>Submit</button>
+	</div>
+    </body>
+</html>
