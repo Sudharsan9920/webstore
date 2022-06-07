@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-elogin',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EloginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService : ApiService) { }
 
   ngOnInit(): void {
+    this.getUsers();
   }
 
+  users : any;
+
+  getUsers()
+  {
+    this.apiService.getRecords().subscribe(
+      data => { this.users = data;},
+      error => { console.log(error);},
+      () => { console.log("Success")}
+    );
+  }
 }

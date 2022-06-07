@@ -14,6 +14,8 @@ import { VeggiesComponent } from './webpage/veggies/veggies.component';
 import { ProvisionsComponent } from './webpage/provisions/provisions.component';
 import { ApplianceComponent } from './webpage/appliance/appliance.component';
 import { BillingComponent } from './webpage/billing/billing.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { BillingComponent } from './webpage/billing/billing.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

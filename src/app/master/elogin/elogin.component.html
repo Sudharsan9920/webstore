@@ -19,5 +19,10 @@
 			<br><br>
 			<i><a href="/jobapply">Apply for job!!</a></i>
 		</div>
+		<div>
+			<p *ngFor="let user of users">
+				{{user.id}}, {{user.name}}, {{user.email}}
+			</p>
+		</div>
 	</body>
 </html>
